@@ -82,7 +82,8 @@ RUN pip install --no-cache-dir \
     omegaconf \
     tensorflow \
     openai \
-    pyarrow
+    pyarrow \
+    sentencepiece
 #    camelot-py \
 #    pycaret \
 
