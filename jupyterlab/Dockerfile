@@ -82,9 +82,9 @@ RUN pip install --no-cache-dir \
     omegaconf \
     tensorflow \
     openai \
-    pycaret \
     pyarrow
 #    camelot-py \
+#    pycaret \
 
 # Furthermore dependencies
 COPY ./requirements.txt /requirements.txt
