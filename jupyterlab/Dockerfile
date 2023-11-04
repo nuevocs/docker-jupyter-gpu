@@ -20,6 +20,9 @@ RUN apt-get update && apt-get install -y default-jre
 # Install dependencies for camelot-py
 RUN apt install -y ghostscript python3-tk
 
+# Install others
+RUN apt install graphviz -y
+
 
 # Install nodejs
 # https://github.com/nodesource/distributions
@@ -83,7 +86,9 @@ RUN pip install --no-cache-dir \
     tensorflow \
     openai \
     pyarrow \
-    sentencepiece
+    sentencepiece \
+    datasets \
+    graphviz
 #    camelot-py \
 #    pycaret \
 
