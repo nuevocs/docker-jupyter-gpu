@@ -9,12 +9,14 @@ services:
     restart: always
     entrypoint: >
       jupyter-lab
+      --NotebookApp.allow_origin='https://colab.research.google.com'
       --allow-root
       --ip=0.0.0.0
       --port=8888
       --no-browser
       --NotebookApp.token=''
       --notebook-dir=/workspace
+      --NotebookApp.port_retries=0
     ports:
       - ${PORT}:8888
     volumes:
